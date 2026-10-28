@@ -1,0 +1,18 @@
+node_modules/
+dist/
+coverage/
+.netlify/
+.env
+.env.*
+!.env.example
+.npmrc
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+
+# Outillage et notes de travail locales, hors du dépôt public
+.claude/
+.taste-skill/
+docs/audit/
+DESIGN_CHOICE.md
