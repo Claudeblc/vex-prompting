@@ -38,6 +38,7 @@ npm install
 npm run dev        # http://127.0.0.1:5181
 npm test           # tests de la logique (Vitest)
 npm run build      # typecheck + build dans dist/
+npm run deploy:pages  # build, puis publication sur la branche gh-pages (GitHub Pages)
 ```
 
 Pile : Vite, React 19, TypeScript strict, Zod, Vitest. Aucune dépendance côté serveur. La logique (suivi de la voix, vitesse, scripts, prompts, appel au fournisseur) est dans `src/lib/` et testée ; l'interface est dans `src/ui/`. Tout le style part des variables CSS de `src/styles.css`.

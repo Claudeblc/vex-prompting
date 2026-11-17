@@ -1,9 +1,10 @@
-# Teste, construit et publie Vex Prompting sur GitHub Pages à chaque push sur main.
+# Teste, construit et publie Vex Prompting sur GitHub Pages.
+# En attente : GitHub Actions est bloqué sur ce compte (problème de facturation), donc le site
+# est publié depuis la branche gh-pages avec `npm run deploy:pages`. Une fois le compte réglé,
+# remettre le déclencheur « push » et la source Pages sur « GitHub Actions ».
 name: Pages
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
