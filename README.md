@@ -6,7 +6,7 @@ Trois outils gratuits pour tourner des vidéos et animer des lives, directement 
 2. **Souffleur IA en direct.** Pendant un live, il repère la question qu'on vous pose et propose une réponse courte, à lire à l'écran ou à écouter (synthèse vocale du navigateur, par exemple dans des lunettes audio). Avec votre propre clé Mistral, Groq ou OpenAI, il répond tout seul ; sans clé, il prépare le prompt à coller dans ChatGPT.
 3. **Générateur de scripts.** Cinq formats (live « j'ai la flemme », démo d'outil, vidéo tournée avec l'IA, format court, tutoriel), trois tons, une durée visée. Le script s'envoie d'un clic dans le prompteur ; pour la vidéo IA, chaque partie vient avec le plan à générer.
 
-**Code source :** https://github.com/Claudeblc/vex-prompting. Le site en ligne arrive bientôt ; en attendant, il se lance en local en deux commandes (voir « Développement »).
+**En ligne : https://claudeblc.github.io/vex-prompting/**
 
 ![Le prompteur pendant une lecture](docs/captures/prompteur-lecture-ordinateur.jpg)
 
