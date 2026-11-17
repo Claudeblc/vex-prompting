@@ -1,6 +1,6 @@
 // Publie dist/ sur la branche gh-pages : GitHub Pages sert alors le site depuis
 // cette branche, sans passer par GitHub Actions.
-import { execFileSync } from 'node:child_process';
+import { execFileSync, execSync } from 'node:child_process';
 import { cpSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -12,7 +12,7 @@ if (read(['status', '--porcelain']).length > 0) {
   throw new Error('Des changements ne sont pas commités : commitez-les avant de publier.');
 }
 
-execFileSync('npm', ['run', 'build'], { stdio: 'inherit', shell: process.platform === 'win32' });
+execSync('npm run build', { stdio: 'inherit' });
 
 const remote = read(['remote', 'get-url', 'origin']);
 const source = read(['rev-parse', '--short', 'HEAD']);
